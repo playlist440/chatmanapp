@@ -1,0 +1,956 @@
+{
+  "sourceLanguage": "en",
+  "version": "1.0",
+  "strings": {
+    "Red": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Rood"
+          }
+        }
+      }
+    },
+    "Orange": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Oranje"
+          }
+        }
+      }
+    },
+    "Yellow": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Geel"
+          }
+        }
+      }
+    },
+    "Green": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Groen"
+          }
+        }
+      }
+    },
+    "Blue": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Blauw"
+          }
+        }
+      }
+    },
+    "Purple": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Paars"
+          }
+        }
+      }
+    },
+    "Pink": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Roze"
+          }
+        }
+      }
+    },
+    "Brown": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bruin"
+          }
+        }
+      }
+    },
+    "White": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wit"
+          }
+        }
+      }
+    },
+    "Black": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zwart"
+          }
+        }
+      }
+    },
+    "A warm and bold primary colour, like an apple": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Een warme, krachtige primaire kleur, zoals een appel"
+          }
+        }
+      }
+    },
+    "Red and yellow mixed, like a sunset": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Rood en geel gemengd, zoals een zonsondergang"
+          }
+        }
+      }
+    },
+    "A bright primary colour, like the sun": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Een heldere primaire kleur, zoals de zon"
+          }
+        }
+      }
+    },
+    "A cool secondary colour, like grass and leaves": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Een koele secundaire kleur, zoals gras en bladeren"
+          }
+        }
+      }
+    },
+    "A primary colour, like a clear sky or the ocean": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Een primaire kleur, zoals een heldere lucht of de oceaan"
+          }
+        }
+      }
+    },
+    "A secondary colour, like grapes": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Een secundaire kleur, zoals druiven"
+          }
+        }
+      }
+    },
+    "A light tint of red, like a flamingo": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Een lichte tint rood, zoals een flamingo"
+          }
+        }
+      }
+    },
+    "Earthy and natural, like wood or chocolate": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aards en natuurlijk, zoals hout of chocola"
+          }
+        }
+      }
+    },
+    "All visible light at once, like snow": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Al het zichtbare licht tegelijk, zoals sneeuw"
+          }
+        }
+      }
+    },
+    "The absence of light, like the night sky": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "De afwezigheid van licht, zoals de nachthemel"
+          }
+        }
+      }
+    },
+    "None": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Geen"
+          }
+        }
+      }
+    },
+    "Filaments": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Filamenten"
+          }
+        }
+      }
+    },
+    "Stars": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sterren"
+          }
+        }
+      }
+    },
+    "Ribbon": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lint"
+          }
+        }
+      }
+    },
+    "Photo": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Foto"
+          }
+        }
+      }
+    },
+    "Light": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Licht"
+          }
+        }
+      }
+    },
+    "Lines": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lijnen"
+          }
+        }
+      }
+    },
+    "The phone's own white or black": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Het eigen wit of zwart van de telefoon"
+          }
+        }
+      }
+    },
+    "Strands of light drifting across": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lichtstrengen die voorbij drijven"
+          }
+        }
+      }
+    },
+    "A night sky, and by day the sun": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Een nachthemel, en overdag de zon"
+          }
+        }
+      }
+    },
+    "Fine lines twisting, lit where they turn": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fijne lijnen die draaien, verlicht waar ze keren"
+          }
+        }
+      }
+    },
+    "A picture of your own": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Een eigen foto"
+          }
+        }
+      }
+    },
+    "Plain white or black, whatever the phone is set to.": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gewoon wit of zwart, zoals de telefoon is ingesteld."
+          }
+        }
+      }
+    },
+    "Strands of light drifting slowly across the middle of the screen.": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lichtstrengen die langzaam over het midden van het scherm drijven."
+          }
+        }
+      }
+    },
+    "A night sky where stars come and go, flare and fade, and now and then a constellation draws itself. By day, the light of a sun that keeps the time.": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Een nachthemel waar sterren komen en gaan, opvlammen en vervagen, en af en toe tekent een sterrenbeeld zich. Overdag het licht van een zon die de tijd bijhoudt."
+          }
+        }
+      }
+    },
+    "A band of fine lines twisting slowly down the screen, glowing where it turns, with dust coming off its edges.": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Een band van fijne lijnen die langzaam over het scherm draait, gloeiend waar hij keert, met stof dat van de randen komt."
+          }
+        }
+      }
+    },
+    "A picture of your own. It stays on this phone and goes nowhere else; the veil keeps the words over it readable.": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Een eigen foto. Hij blijft op deze telefoon en gaat nergens anders heen; de sluier houdt de tekst erover leesbaar."
+          }
+        }
+      }
+    },
+    "Balanced": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gebalanceerd"
+          }
+        }
+      }
+    },
+    "Maximum": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Maximaal"
+          }
+        }
+      }
+    },
+    "Photos you take are around a megabyte. You won't see the difference; your data allowance will.": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Foto's die je maakt zijn ongeveer een megabyte. Jij ziet het verschil niet; je databundel wel."
+          }
+        }
+      }
+    },
+    "Photos you take are sent uncompressed — often more than ten megabytes each. Worth it on wifi, painful on a train.": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Foto's die je maakt gaan ongecomprimeerd — vaak meer dan tien megabyte per stuk. Prima op wifi, pijnlijk in de trein."
+          }
+        }
+      }
+    },
+    "Off": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Uit"
+          }
+        }
+      }
+    },
+    "No gateway set": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Geen gateway ingesteld"
+          }
+        }
+      }
+    },
+    "Not available in this build": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Niet beschikbaar in deze build"
+          }
+        }
+      }
+    },
+    "Refused on this device": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Geweigerd op dit apparaat"
+          }
+        }
+      }
+    },
+    "Registering…": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Registreren…"
+          }
+        }
+      }
+    },
+    "On": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aan"
+          }
+        }
+      }
+    },
+    "Something went wrong": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Er ging iets mis"
+          }
+        }
+      }
+    },
+    "Chatman fetches messages while it's open. Notifications need a push gateway on your server and a paid Apple developer account.": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Chatman haalt berichten op zolang de app open is. Meldingen vragen een pushgateway op je server en een betaald Apple-ontwikkelaarsaccount."
+          }
+        }
+      }
+    },
+    "Set the address of your push gateway under Advanced, then turn this on.": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Stel het adres van je pushgateway in onder Geavanceerd en zet dit daarna aan."
+          }
+        }
+      }
+    },
+    "Notifications are switched off for Chatman in the Settings app.": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Meldingen staan uit voor Chatman in de app Instellingen."
+          }
+        }
+      }
+    },
+    "Your server will wake Chatman when something arrives. It sends only the event's ID — never the message.": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Je server wekt Chatman als er iets binnenkomt. Hij stuurt alleen het ID van de gebeurtenis — nooit het bericht."
+          }
+        }
+      }
+    },
+    "It didn't go through. It's marked in that chat, to try again.": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Het kwam niet aan. Het staat gemarkeerd in die chat, om opnieuw te proberen."
+          }
+        }
+      }
+    },
+    "Video": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Video"
+          }
+        }
+      }
+    },
+    "Sticker": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sticker"
+          }
+        }
+      }
+    },
+    "Waiting for names from your iPhone.": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wachten op namen van je iPhone."
+          }
+        }
+      }
+    },
+    "No access to your contacts, so network names are used.": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Geen toegang tot je contacten, dus de namen van het netwerk worden gebruikt."
+          }
+        }
+      }
+    },
+    "Access granted, but no contacts with phone numbers were found.": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Toegang gegeven, maar er zijn geen contacten met telefoonnummers gevonden."
+          }
+        }
+      }
+    },
+    "Not available on this device.": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Niet beschikbaar op dit apparaat."
+          }
+        }
+      }
+    },
+    "The bridge didn't say which room it made.": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "De brug zei niet welke kamer hij maakte."
+          }
+        }
+      }
+    },
+    "Sending…": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Versturen…"
+          }
+        }
+      }
+    },
+    "Not sent": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Niet verstuurd"
+          }
+        }
+      }
+    },
+    "Sent": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Verstuurd"
+          }
+        }
+      }
+    },
+    "Delivered": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Afgeleverd"
+          }
+        }
+      }
+    },
+    "You're not signed in.": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Je bent niet ingelogd."
+          }
+        }
+      }
+    },
+    "That server address doesn't look right.": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dat serveradres klopt niet."
+          }
+        }
+      }
+    },
+    "The server sent something this app didn't understand.": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "De server stuurde iets wat deze app niet begreep."
+          }
+        }
+      }
+    },
+    "The server refused. Check your username and password.": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "De server weigerde. Controleer je gebruikersnaam en wachtwoord."
+          }
+        }
+      }
+    },
+    "Server reachable": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Server bereikbaar"
+          }
+        }
+      }
+    },
+    "No internet on this device": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Geen internet op dit apparaat"
+          }
+        }
+      }
+    },
+    "Server didn't answer": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Server antwoordde niet"
+          }
+        }
+      }
+    },
+    "Server name not found": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Servernaam niet gevonden"
+          }
+        }
+      }
+    },
+    "Connection refused": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Verbinding geweigerd"
+          }
+        }
+      }
+    },
+    "Secure connection failed": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Beveiligde verbinding mislukt"
+          }
+        }
+      }
+    },
+    "Server address isn't valid": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Serveradres is ongeldig"
+          }
+        }
+      }
+    },
+    "Chatman isn't allowed to use your location. You can change that in Settings.": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Chatman mag je locatie niet gebruiken. Dat kun je wijzigen in Instellingen."
+          }
+        }
+      }
+    },
+    "Your location couldn't be worked out.": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Je locatie kon niet worden bepaald."
+          }
+        }
+      }
+    },
+    "That took too long. Try again somewhere with a clearer view of the sky.": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dat duurde te lang. Probeer het opnieuw ergens met meer zicht op de lucht."
+          }
+        }
+      }
+    },
+    "Not delivered": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Niet afgeleverd"
+          }
+        }
+      }
+    },
+    "Encrypted message": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Versleuteld bericht"
+          }
+        }
+      }
+    },
+    "The bridge asked to show something but sent nothing.": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "De brug wilde iets tonen maar stuurde niets."
+          }
+        }
+      }
+    },
+    "The bridge asked a question with nothing in it.": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "De brug stelde een lege vraag."
+          }
+        }
+      }
+    },
+    "The bridge asked for a sign-in page but sent no address.": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "De brug vroeg om een inlogpagina maar stuurde geen adres."
+          }
+        }
+      }
+    },
+    "This account needs a kind of sign-in Chatman can't show yet.": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dit account vraagt een soort inloggen die Chatman nog niet kan tonen."
+          }
+        }
+      }
+    },
+    "The bridge offers no way to sign in.": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "De brug biedt geen manier om in te loggen."
+          }
+        }
+      }
+    },
+    "The bridge sent an empty code.": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "De brug stuurde een lege code."
+          }
+        }
+      }
+    },
+    "This device can't talk to a watch.": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dit apparaat kan niet met een horloge praten."
+          }
+        }
+      }
+    },
+    "No watch is paired with this iPhone.": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Er is geen horloge gekoppeld aan deze iPhone."
+          }
+        }
+      }
+    },
+    "Chatman isn't installed on the watch yet.": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Chatman staat nog niet op het horloge."
+          }
+        }
+      }
+    },
+    "Session sent to the watch, without contact pictures.": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sessie naar het horloge gestuurd, zonder contactfoto's."
+          }
+        }
+      }
+    },
+    "The %1$@ bridge on your server isn't answering. Nothing arrives from %2$@ until it does.": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "De %1$@-brug op je server antwoordt niet. Er komt niets binnen van %2$@ tot hij dat weer doet."
+          }
+        }
+      }
+    },
+    "Trying to reconnect since %1$@. Nothing arrives from %2$@ until it does.": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Probeert opnieuw te verbinden sinds %1$@. Er komt niets binnen van %2$@ tot dat lukt."
+          }
+        }
+      }
+    },
+    "GIF": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "GIF"
+          }
+        }
+      }
+    },
+    "Voice message": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Spraakbericht"
+          }
+        }
+      }
+    },
+    "Standard": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Standaard"
+          }
+        }
+      }
+    }
+  }
+}

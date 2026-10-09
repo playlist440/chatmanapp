@@ -1,0 +1,72 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "CFBundleName" : {
+      "comment" : "Bundle name",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Chatman"
+          }
+        }
+      }
+    },
+    "NSCameraUsageDescription" : {
+      "comment" : "Privacy - Camera Usage Description",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Chatman opens the camera when you choose Camera from the plus button, so you can send a photo without leaving the conversation."
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Chatman opent de camera als je bij de plusknop voor Camera kiest, zodat je een foto kunt sturen zonder het gesprek te verlaten."
+          }
+        }
+      }
+    },
+    "NSContactsUsageDescription" : {
+      "comment" : "Privacy - Contacts Usage Description",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Chatman uses your contacts to show the names and photos you already know, instead of whatever name someone set on Signal or WhatsApp. Your contacts stay on this device."
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Chatman gebruikt je contacten om de namen en foto's te tonen die je al kent, in plaats van de naam die iemand op Signal of WhatsApp heeft ingesteld. Je contacten blijven op dit apparaat."
+          }
+        }
+      }
+    },
+    "NSLocationWhenInUseUsageDescription" : {
+      "comment" : "Privacy - Location When In Use Usage Description",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Chatman asks where you are only when you tap the location button, and sends it as a link in that one conversation. It is never collected, stored or shared anywhere else."
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Chatman vraagt je locatie alleen als je op de locatieknop tikt, en stuurt die als link in dat ene gesprek. Je locatie wordt nergens anders verzameld, bewaard of gedeeld."
+          }
+        }
+      }
+    }
+  },
+  "version" : "1.3"
+}

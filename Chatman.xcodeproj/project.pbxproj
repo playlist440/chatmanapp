@@ -1,0 +1,1207 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		931B278A30743AA700347279 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 931B278930743AA700347279 /* Localizable.xcstrings */; };
+		938AD4E7304BF56D00BD59EA /* Chatman Watch Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 938AD4C7304BF56C00BD59EA /* Chatman Watch Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		938AD4F5304BF7B100BD59EA /* ChatmanKit in Frameworks */ = {isa = PBXBuildFile; productRef = 938AD4F4304BF7B100BD59EA /* ChatmanKit */; };
+		938AD4F7304BF7DE00BD59EA /* ChatmanKit in Frameworks */ = {isa = PBXBuildFile; productRef = 938AD4F6304BF7DE00BD59EA /* ChatmanKit */; };
+		CA7100000000000000000008 /* Chatman Complication.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = CA7100000000000000000002 /* Chatman Complication.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		CA7100000000000000000009 /* ChatmanKit in Frameworks */ = {isa = PBXBuildFile; productRef = CA710000000000000000000A /* ChatmanKit */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		938AD4A7304BF4DD00BD59EA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 938AD491304BF4DC00BD59EA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 938AD498304BF4DC00BD59EA;
+			remoteInfo = Chatman;
+		};
+		938AD4B1304BF4DD00BD59EA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 938AD491304BF4DC00BD59EA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 938AD498304BF4DC00BD59EA;
+			remoteInfo = Chatman;
+		};
+		938AD4D4304BF56D00BD59EA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 938AD491304BF4DC00BD59EA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 938AD4C6304BF56C00BD59EA;
+			remoteInfo = "Chatman Watch Watch App";
+		};
+		938AD4DE304BF56D00BD59EA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 938AD491304BF4DC00BD59EA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 938AD4C6304BF56C00BD59EA;
+			remoteInfo = "Chatman Watch Watch App";
+		};
+		938AD4E5304BF56D00BD59EA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 938AD491304BF4DC00BD59EA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 938AD4C6304BF56C00BD59EA;
+			remoteInfo = "Chatman Watch Watch App";
+		};
+		CA710000000000000000000F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 938AD491304BF4DC00BD59EA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CA7100000000000000000001;
+			remoteInfo = "Chatman Complication";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		938AD4EB304BF56D00BD59EA /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				938AD4E7304BF56D00BD59EA /* Chatman Watch Watch App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA7100000000000000000007 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				CA7100000000000000000008 /* Chatman Complication.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		931B278930743AA700347279 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		938AD499304BF4DC00BD59EA /* Chatman.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Chatman.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		938AD4A6304BF4DD00BD59EA /* ChatmanTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChatmanTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		938AD4B0304BF4DD00BD59EA /* ChatmanUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChatmanUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		938AD4C7304BF56C00BD59EA /* Chatman Watch Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Chatman Watch Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		938AD4D3304BF56D00BD59EA /* Chatman Watch Watch AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Chatman Watch Watch AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		938AD4DD304BF56D00BD59EA /* Chatman Watch Watch AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Chatman Watch Watch AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA7100000000000000000002 /* Chatman Complication.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Chatman Complication.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		938AD49B304BF4DC00BD59EA /* Chatman */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Chatman;
+			sourceTree = "<group>";
+		};
+		938AD4A9304BF4DD00BD59EA /* ChatmanTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = ChatmanTests;
+			sourceTree = "<group>";
+		};
+		938AD4B3304BF4DD00BD59EA /* ChatmanUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = ChatmanUITests;
+			sourceTree = "<group>";
+		};
+		938AD4C8304BF56C00BD59EA /* Chatman Watch Watch App */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "Chatman Watch Watch App";
+			sourceTree = "<group>";
+		};
+		938AD4D6304BF56D00BD59EA /* Chatman Watch Watch AppTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "Chatman Watch Watch AppTests";
+			sourceTree = "<group>";
+		};
+		938AD4E0304BF56D00BD59EA /* Chatman Watch Watch AppUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "Chatman Watch Watch AppUITests";
+			sourceTree = "<group>";
+		};
+		CA7100000000000000000003 /* Chatman Complication */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "Chatman Complication";
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		938AD496304BF4DC00BD59EA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				938AD4F5304BF7B100BD59EA /* ChatmanKit in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		938AD4A3304BF4DD00BD59EA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		938AD4AD304BF4DD00BD59EA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		938AD4C4304BF56C00BD59EA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				938AD4F7304BF7DE00BD59EA /* ChatmanKit in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		938AD4D0304BF56D00BD59EA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		938AD4DA304BF56D00BD59EA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA7100000000000000000005 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA7100000000000000000009 /* ChatmanKit in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		938AD490304BF4DC00BD59EA = {
+			isa = PBXGroup;
+			children = (
+				931B278930743AA700347279 /* Localizable.xcstrings */,
+				938AD49B304BF4DC00BD59EA /* Chatman */,
+				938AD4A9304BF4DD00BD59EA /* ChatmanTests */,
+				938AD4B3304BF4DD00BD59EA /* ChatmanUITests */,
+				938AD4C8304BF56C00BD59EA /* Chatman Watch Watch App */,
+				938AD4D6304BF56D00BD59EA /* Chatman Watch Watch AppTests */,
+				938AD4E0304BF56D00BD59EA /* Chatman Watch Watch AppUITests */,
+				CA7100000000000000000003 /* Chatman Complication */,
+				938AD4F3304BF7B100BD59EA /* Frameworks */,
+				938AD49A304BF4DC00BD59EA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		938AD49A304BF4DC00BD59EA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				938AD499304BF4DC00BD59EA /* Chatman.app */,
+				938AD4A6304BF4DD00BD59EA /* ChatmanTests.xctest */,
+				938AD4B0304BF4DD00BD59EA /* ChatmanUITests.xctest */,
+				938AD4C7304BF56C00BD59EA /* Chatman Watch Watch App.app */,
+				938AD4D3304BF56D00BD59EA /* Chatman Watch Watch AppTests.xctest */,
+				938AD4DD304BF56D00BD59EA /* Chatman Watch Watch AppUITests.xctest */,
+				CA7100000000000000000002 /* Chatman Complication.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		938AD4F3304BF7B100BD59EA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		938AD498304BF4DC00BD59EA /* Chatman */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 938AD4BA304BF4DD00BD59EA /* Build configuration list for PBXNativeTarget "Chatman" */;
+			buildPhases = (
+				938AD495304BF4DC00BD59EA /* Sources */,
+				938AD496304BF4DC00BD59EA /* Frameworks */,
+				938AD497304BF4DC00BD59EA /* Resources */,
+				938AD4EB304BF56D00BD59EA /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				938AD4E6304BF56D00BD59EA /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				938AD49B304BF4DC00BD59EA /* Chatman */,
+			);
+			name = Chatman;
+			packageProductDependencies = (
+				938AD4F4304BF7B100BD59EA /* ChatmanKit */,
+			);
+			productName = Chatman;
+			productReference = 938AD499304BF4DC00BD59EA /* Chatman.app */;
+			productType = "com.apple.product-type.application";
+		};
+		938AD4A5304BF4DD00BD59EA /* ChatmanTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 938AD4BD304BF4DD00BD59EA /* Build configuration list for PBXNativeTarget "ChatmanTests" */;
+			buildPhases = (
+				938AD4A2304BF4DD00BD59EA /* Sources */,
+				938AD4A3304BF4DD00BD59EA /* Frameworks */,
+				938AD4A4304BF4DD00BD59EA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				938AD4A8304BF4DD00BD59EA /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				938AD4A9304BF4DD00BD59EA /* ChatmanTests */,
+			);
+			name = ChatmanTests;
+			packageProductDependencies = (
+			);
+			productName = ChatmanTests;
+			productReference = 938AD4A6304BF4DD00BD59EA /* ChatmanTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		938AD4AF304BF4DD00BD59EA /* ChatmanUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 938AD4C0304BF4DD00BD59EA /* Build configuration list for PBXNativeTarget "ChatmanUITests" */;
+			buildPhases = (
+				938AD4AC304BF4DD00BD59EA /* Sources */,
+				938AD4AD304BF4DD00BD59EA /* Frameworks */,
+				938AD4AE304BF4DD00BD59EA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				938AD4B2304BF4DD00BD59EA /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				938AD4B3304BF4DD00BD59EA /* ChatmanUITests */,
+			);
+			name = ChatmanUITests;
+			packageProductDependencies = (
+			);
+			productName = ChatmanUITests;
+			productReference = 938AD4B0304BF4DD00BD59EA /* ChatmanUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		938AD4C6304BF56C00BD59EA /* Chatman Watch Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 938AD4E8304BF56D00BD59EA /* Build configuration list for PBXNativeTarget "Chatman Watch Watch App" */;
+			buildPhases = (
+				938AD4C3304BF56C00BD59EA /* Sources */,
+				938AD4C4304BF56C00BD59EA /* Frameworks */,
+				938AD4C5304BF56C00BD59EA /* Resources */,
+				CA7100000000000000000007 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CA710000000000000000000E /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				938AD4C8304BF56C00BD59EA /* Chatman Watch Watch App */,
+			);
+			name = "Chatman Watch Watch App";
+			packageProductDependencies = (
+				938AD4F6304BF7DE00BD59EA /* ChatmanKit */,
+			);
+			productName = "Chatman Watch Watch App";
+			productReference = 938AD4C7304BF56C00BD59EA /* Chatman Watch Watch App.app */;
+			productType = "com.apple.product-type.application";
+		};
+		938AD4D2304BF56D00BD59EA /* Chatman Watch Watch AppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 938AD4EC304BF56D00BD59EA /* Build configuration list for PBXNativeTarget "Chatman Watch Watch AppTests" */;
+			buildPhases = (
+				938AD4CF304BF56D00BD59EA /* Sources */,
+				938AD4D0304BF56D00BD59EA /* Frameworks */,
+				938AD4D1304BF56D00BD59EA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				938AD4D5304BF56D00BD59EA /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				938AD4D6304BF56D00BD59EA /* Chatman Watch Watch AppTests */,
+			);
+			name = "Chatman Watch Watch AppTests";
+			packageProductDependencies = (
+			);
+			productName = "Chatman Watch Watch AppTests";
+			productReference = 938AD4D3304BF56D00BD59EA /* Chatman Watch Watch AppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		938AD4DC304BF56D00BD59EA /* Chatman Watch Watch AppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 938AD4EF304BF56D00BD59EA /* Build configuration list for PBXNativeTarget "Chatman Watch Watch AppUITests" */;
+			buildPhases = (
+				938AD4D9304BF56D00BD59EA /* Sources */,
+				938AD4DA304BF56D00BD59EA /* Frameworks */,
+				938AD4DB304BF56D00BD59EA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				938AD4DF304BF56D00BD59EA /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				938AD4E0304BF56D00BD59EA /* Chatman Watch Watch AppUITests */,
+			);
+			name = "Chatman Watch Watch AppUITests";
+			packageProductDependencies = (
+			);
+			productName = "Chatman Watch Watch AppUITests";
+			productReference = 938AD4DD304BF56D00BD59EA /* Chatman Watch Watch AppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		CA7100000000000000000001 /* Chatman Complication */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CA710000000000000000000B /* Build configuration list for PBXNativeTarget "Chatman Complication" */;
+			buildPhases = (
+				CA7100000000000000000004 /* Sources */,
+				CA7100000000000000000005 /* Frameworks */,
+				CA7100000000000000000006 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				CA7100000000000000000003 /* Chatman Complication */,
+			);
+			name = "Chatman Complication";
+			packageProductDependencies = (
+				CA710000000000000000000A /* ChatmanKit */,
+			);
+			productName = "Chatman Complication";
+			productReference = CA7100000000000000000002 /* Chatman Complication.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		938AD491304BF4DC00BD59EA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2660;
+				LastUpgradeCheck = 2660;
+				TargetAttributes = {
+					938AD498304BF4DC00BD59EA = {
+						CreatedOnToolsVersion = 26.6;
+					};
+					938AD4A5304BF4DD00BD59EA = {
+						CreatedOnToolsVersion = 26.6;
+						TestTargetID = 938AD498304BF4DC00BD59EA;
+					};
+					938AD4AF304BF4DD00BD59EA = {
+						CreatedOnToolsVersion = 26.6;
+						TestTargetID = 938AD498304BF4DC00BD59EA;
+					};
+					938AD4C6304BF56C00BD59EA = {
+						CreatedOnToolsVersion = 26.6;
+					};
+					938AD4D2304BF56D00BD59EA = {
+						CreatedOnToolsVersion = 26.6;
+						TestTargetID = 938AD4C6304BF56C00BD59EA;
+					};
+					938AD4DC304BF56D00BD59EA = {
+						CreatedOnToolsVersion = 26.6;
+						TestTargetID = 938AD4C6304BF56C00BD59EA;
+					};
+				};
+			};
+			buildConfigurationList = 938AD494304BF4DC00BD59EA /* Build configuration list for PBXProject "Chatman" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				nl,
+			);
+			mainGroup = 938AD490304BF4DC00BD59EA;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				938AD4F2304BF74E00BD59EA /* XCLocalSwiftPackageReference "ChatmanKit" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 938AD49A304BF4DC00BD59EA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				938AD498304BF4DC00BD59EA /* Chatman */,
+				938AD4A5304BF4DD00BD59EA /* ChatmanTests */,
+				938AD4AF304BF4DD00BD59EA /* ChatmanUITests */,
+				938AD4C6304BF56C00BD59EA /* Chatman Watch Watch App */,
+				938AD4D2304BF56D00BD59EA /* Chatman Watch Watch AppTests */,
+				938AD4DC304BF56D00BD59EA /* Chatman Watch Watch AppUITests */,
+				CA7100000000000000000001 /* Chatman Complication */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		938AD497304BF4DC00BD59EA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		938AD4A4304BF4DD00BD59EA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		938AD4AE304BF4DD00BD59EA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		938AD4C5304BF56C00BD59EA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		938AD4D1304BF56D00BD59EA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		938AD4DB304BF56D00BD59EA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA7100000000000000000006 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				931B278A30743AA700347279 /* Localizable.xcstrings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		938AD495304BF4DC00BD59EA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		938AD4A2304BF4DD00BD59EA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		938AD4AC304BF4DD00BD59EA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		938AD4C3304BF56C00BD59EA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		938AD4CF304BF56D00BD59EA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		938AD4D9304BF56D00BD59EA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA7100000000000000000004 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		938AD4A8304BF4DD00BD59EA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 938AD498304BF4DC00BD59EA /* Chatman */;
+			targetProxy = 938AD4A7304BF4DD00BD59EA /* PBXContainerItemProxy */;
+		};
+		938AD4B2304BF4DD00BD59EA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 938AD498304BF4DC00BD59EA /* Chatman */;
+			targetProxy = 938AD4B1304BF4DD00BD59EA /* PBXContainerItemProxy */;
+		};
+		938AD4D5304BF56D00BD59EA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 938AD4C6304BF56C00BD59EA /* Chatman Watch Watch App */;
+			targetProxy = 938AD4D4304BF56D00BD59EA /* PBXContainerItemProxy */;
+		};
+		938AD4DF304BF56D00BD59EA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 938AD4C6304BF56C00BD59EA /* Chatman Watch Watch App */;
+			targetProxy = 938AD4DE304BF56D00BD59EA /* PBXContainerItemProxy */;
+		};
+		938AD4E6304BF56D00BD59EA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 938AD4C6304BF56C00BD59EA /* Chatman Watch Watch App */;
+			targetProxy = 938AD4E5304BF56D00BD59EA /* PBXContainerItemProxy */;
+		};
+		CA710000000000000000000E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CA7100000000000000000001 /* Chatman Complication */;
+			targetProxy = CA710000000000000000000F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		938AD4B8304BF4DD00BD59EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		938AD4B9304BF4DD00BD59EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		938AD4BB304BF4DD00BD59EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Chatman opens the camera when you choose Camera from the plus button, so you can send a photo without leaving the conversation.";
+				INFOPLIST_KEY_NSContactsUsageDescription = "Chatman uses your contacts to show the names and photos you already know, instead of whatever name someone set on Signal or WhatsApp. Your contacts stay on this device.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Chatman asks where you are only when you tap the location button, and sends it as a link in that one conversation. It is never collected, stored or shared anywhere else.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.Chatman;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		938AD4BC304BF4DD00BD59EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Chatman opens the camera when you choose Camera from the plus button, so you can send a photo without leaving the conversation.";
+				INFOPLIST_KEY_NSContactsUsageDescription = "Chatman uses your contacts to show the names and photos you already know, instead of whatever name someone set on Signal or WhatsApp. Your contacts stay on this device.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Chatman asks where you are only when you tap the location button, and sends it as a link in that one conversation. It is never collected, stored or shared anywhere else.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.Chatman;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		938AD4BE304BF4DD00BD59EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.ChatmanTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Chatman.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Chatman";
+			};
+			name = Debug;
+		};
+		938AD4BF304BF4DD00BD59EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.ChatmanTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Chatman.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Chatman";
+			};
+			name = Release;
+		};
+		938AD4C1304BF4DD00BD59EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.ChatmanUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Chatman;
+			};
+			name = Debug;
+		};
+		938AD4C2304BF4DD00BD59EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.ChatmanUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Chatman;
+			};
+			name = Release;
+		};
+		938AD4E9304BF56D00BD59EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Chatman Watch Watch App/Chatman Watch Watch App.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Chatman Watch";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Chatman asks where you are only when you tap the location button, and sends it as a link in that one conversation. It is never collected, stored or shared anywhere else.";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.example.Chatman;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.Chatman.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 26.0;
+			};
+			name = Debug;
+		};
+		938AD4EA304BF56D00BD59EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Chatman Watch Watch App/Chatman Watch Watch App.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Chatman Watch";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Chatman asks where you are only when you tap the location button, and sends it as a link in that one conversation. It is never collected, stored or shared anywhere else.";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.example.Chatman;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.Chatman.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 26.0;
+			};
+			name = Release;
+		};
+		938AD4ED304BF56D00BD59EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.Chatman-Watch-Watch-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Chatman Watch Watch App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Chatman Watch Watch App";
+				WATCHOS_DEPLOYMENT_TARGET = 26.5;
+			};
+			name = Debug;
+		};
+		938AD4EE304BF56D00BD59EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.Chatman-Watch-Watch-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Chatman Watch Watch App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Chatman Watch Watch App";
+				WATCHOS_DEPLOYMENT_TARGET = 26.5;
+			};
+			name = Release;
+		};
+		938AD4F0304BF56D00BD59EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.Chatman-Watch-Watch-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "Chatman Watch Watch App";
+				WATCHOS_DEPLOYMENT_TARGET = 26.5;
+			};
+			name = Debug;
+		};
+		938AD4F1304BF56D00BD59EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.Chatman-Watch-Watch-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "Chatman Watch Watch App";
+				WATCHOS_DEPLOYMENT_TARGET = 26.5;
+			};
+			name = Release;
+		};
+		CA710000000000000000000C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Chatman Complication/Chatman Complication.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "ChatmanComplication-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = Chatman;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.Chatman.watchkitapp.face;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = nonisolated;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 26.0;
+			};
+			name = Debug;
+		};
+		CA710000000000000000000D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Chatman Complication/Chatman Complication.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "ChatmanComplication-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = Chatman;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.Chatman.watchkitapp.face;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = nonisolated;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 26.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		938AD494304BF4DC00BD59EA /* Build configuration list for PBXProject "Chatman" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				938AD4B8304BF4DD00BD59EA /* Debug */,
+				938AD4B9304BF4DD00BD59EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		938AD4BA304BF4DD00BD59EA /* Build configuration list for PBXNativeTarget "Chatman" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				938AD4BB304BF4DD00BD59EA /* Debug */,
+				938AD4BC304BF4DD00BD59EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		938AD4BD304BF4DD00BD59EA /* Build configuration list for PBXNativeTarget "ChatmanTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				938AD4BE304BF4DD00BD59EA /* Debug */,
+				938AD4BF304BF4DD00BD59EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		938AD4C0304BF4DD00BD59EA /* Build configuration list for PBXNativeTarget "ChatmanUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				938AD4C1304BF4DD00BD59EA /* Debug */,
+				938AD4C2304BF4DD00BD59EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		938AD4E8304BF56D00BD59EA /* Build configuration list for PBXNativeTarget "Chatman Watch Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				938AD4E9304BF56D00BD59EA /* Debug */,
+				938AD4EA304BF56D00BD59EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		938AD4EC304BF56D00BD59EA /* Build configuration list for PBXNativeTarget "Chatman Watch Watch AppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				938AD4ED304BF56D00BD59EA /* Debug */,
+				938AD4EE304BF56D00BD59EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		938AD4EF304BF56D00BD59EA /* Build configuration list for PBXNativeTarget "Chatman Watch Watch AppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				938AD4F0304BF56D00BD59EA /* Debug */,
+				938AD4F1304BF56D00BD59EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CA710000000000000000000B /* Build configuration list for PBXNativeTarget "Chatman Complication" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA710000000000000000000C /* Debug */,
+				CA710000000000000000000D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		938AD4F2304BF74E00BD59EA /* XCLocalSwiftPackageReference "ChatmanKit" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ChatmanKit;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		938AD4F4304BF7B100BD59EA /* ChatmanKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 938AD4F2304BF74E00BD59EA /* XCLocalSwiftPackageReference "ChatmanKit" */;
+			productName = ChatmanKit;
+		};
+		938AD4F6304BF7DE00BD59EA /* ChatmanKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 938AD4F2304BF74E00BD59EA /* XCLocalSwiftPackageReference "ChatmanKit" */;
+			productName = ChatmanKit;
+		};
+		CA710000000000000000000A /* ChatmanKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = ChatmanKit;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 938AD491304BF4DC00BD59EA /* Project object */;
+}

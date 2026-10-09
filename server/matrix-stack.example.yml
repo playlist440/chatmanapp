@@ -1,0 +1,605 @@
+# Matrix + mautrix, als één stack.
+#
+# Dit is het voorbeeldbestand: elk geheim is vervangen door VUL-IN-…, en het
+# domein door matrix.example.com. Vul beide in vóór je dit uitrolt — hoe, staat
+# in server/README.md.
+#
+# Zet je eigen ingevulde versie NOOIT in een git-repository. Er staan tokens in
+# waarmee iemand namens jouw bruggen kan praten.
+
+# Matrix-server voor matrix.example.com
+#
+# EEN stack. Plakken in Portainer -> Stacks -> Add stack -> Web editor.
+# Er hoeft niets op je server te staan en er valt niets te bouwen: alle
+# images zijn officieel en kant-en-klaar, alle configuratie staat hieronder.
+#
+# Vul in Portainer onder "Environment variables" twee regels in:
+#
+#   GANDI_TOKEN   je Gandi Personal Access Token
+#   ACME_EMAIL    een e-mailadres dat je leest (Let's Encrypt waarschuwt
+#                 hier als een certificaat dreigt te verlopen)
+#
+# Verder niets. Deploy en klaar.
+
+services:
+  db:
+    image: postgres:16-alpine
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: synapse
+      POSTGRES_PASSWORD: "VUL-IN-SYNAPSE-DATABASEWACHTWOORD"
+      POSTGRES_DB: synapse
+      # Synapse eist deze sorteervolgorde. Achteraf wijzigen kan niet.
+      POSTGRES_INITDB_ARGS: "--encoding=UTF8 --lc-collate=C --lc-ctype=C"
+    volumes:
+      - matrix_db:/var/lib/postgresql/data
+    configs:
+      - source: bridgedb
+        target: /docker-entrypoint-initdb.d/10-bridge-db.sh
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U synapse"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+    labels:
+      # Watchtower mag hier niet aankomen: een automatische update van
+      # Postgres kan je database onbruikbaar maken.
+      com.centurylinklabs.watchtower.enable: "false"
+
+  # Zet het datavolume klaar voordat Synapse start.
+  #
+  # De Synapse-image hoort dit zelf te doen, maar dat gebeurt hier niet, met als
+  # gevolg dat Synapse (gebruiker 991) zijn eigen mediamap niet kan aanmaken in
+  # een volume dat van root is. Deze container lost dat op en stopt daarna.
+  synapse-init:
+    image: alpine:3.20
+    restart: "no"
+    command: sh -c "mkdir -p /data/media_store && chown -R 991:991 /data && echo 'volume klaar'"
+    volumes:
+      - matrix_synapse:/data
+    labels:
+      com.centurylinklabs.watchtower.enable: "false"
+
+  synapse:
+    image: ghcr.io/element-hq/synapse:v1.140.0
+    restart: unless-stopped
+    depends_on:
+      db:
+        condition: service_healthy
+      synapse-init:
+        condition: service_completed_successfully
+    ports:
+      # Alleen voor je eigen netwerk: testen en Synapse Admin voordat
+      # je domein werkt. Niet doorsturen op je router.
+      - "8008:8008"
+    environment:
+      # Vertelt de image waar de configuratie staat. Cruciaal dat dit BUITEN
+      # /data ligt: de image doet bij het opstarten een chown over /data, en
+      # alleen-lezen bestanden daarin laten die reparatie mislukken.
+      SYNAPSE_CONFIG_PATH: /config/homeserver.yaml
+    volumes:
+      - matrix_synapse:/data
+    configs:
+      - source: homeserver
+        target: /config/homeserver.yaml
+      - source: logconfig
+        target: /config/log.config
+      - source: signingkey
+        target: /config/signing.key
+      # Hiermee weet Synapse dat de Signal-brug bestaat en welke tokens
+      # hij mag gebruiken. Zonder dit bestand start Synapse niet.
+      - source: signalregistration
+        target: /config/signal-registration.yaml
+      - source: whatsappregistration
+        target: /config/whatsapp-registration.yaml
+    labels:
+      com.centurylinklabs.watchtower.enable: "false"
+
+  traefik:
+    # Officieel image, niets te bouwen. Belangrijk verschil met Caddy: hier
+    # zitten alle DNS-providers al ingebouwd, Gandi inclusief. Dat is de
+    # enige reden voor deze keuze.
+    image: traefik:v3
+    restart: unless-stopped
+    depends_on:
+      - synapse
+    environment:
+      # Odido blokkeert poort 80 en 443, dus Let's Encrypt kan niet langskomen
+      # om te controleren. In plaats daarvan bewijst Traefik het eigendom door
+      # kort een record in je Gandi-zone te zetten. Daar is dit token voor.
+      GANDIV5_PERSONAL_ACCESS_TOKEN: ${GANDI_TOKEN}
+    command:
+      - --providers.file.directory=/etc/traefik/dynamic
+      - --entrypoints.websecure.address=:443
+      - --certificatesresolvers.gandi.acme.email=${ACME_EMAIL}
+      - --certificatesresolvers.gandi.acme.storage=/letsencrypt/acme.json
+      - --certificatesresolvers.gandi.acme.dnschallenge=true
+      - --certificatesresolvers.gandi.acme.dnschallenge.provider=gandiv5
+      # Controleer bij publieke nameservers of het record al gepubliceerd is.
+      # Zonder dit vraagt Traefik het aan je router, en die geeft een
+      # verouderd antwoord uit zijn cache.
+      - --certificatesresolvers.gandi.acme.dnschallenge.resolvers=9.9.9.9:53,1.1.1.1:53
+      - --log.level=INFO
+    ports:
+      # Je router stuurt extern 8443 hierheen. 8443 was op de server zelf
+      # bezet, vandaar 4443.
+      - "4443:443"
+    volumes:
+      - matrix_traefik:/letsencrypt
+    configs:
+      - source: traefikroute
+        target: /etc/traefik/dynamic/matrix.yml
+    labels:
+      com.centurylinklabs.watchtower.enable: "false"
+      # Compose vergelijkt alleen de servicedefinitie, niet de inhoud van de
+      # configuratiebestanden hieronder. Verandert alleen die inhoud, dan blijft
+      # de oude container staan en lijkt je wijziging niets te doen.
+      # Verhoog dit nummer bij elke wijziging aan traefikroute, dan wordt de
+      # container gegarandeerd opnieuw aangemaakt.
+      chatman.config-revisie: "3"
+
+  synapse-admin:
+    image: ghcr.io/etkecc/synapse-admin:latest
+    restart: unless-stopped
+    depends_on:
+      - synapse
+    ports:
+      # Bewust alleen op je LAN, niet naar buiten.
+      - "8009:80"
+    labels:
+      com.centurylinklabs.watchtower.enable: "false"
+
+  # Zet de configuratie van de brug klaar in zijn volume.
+  #
+  # De brug schrijft zelf in zijn configuratiebestand bij het opstarten, dus
+  # het kan niet als alleen-lezen bestand gekoppeld worden.
+  #
+  # Deze container overschrijft de configuratie bij ELKE start, en dat is met
+  # opzet: deze stack is de enige waarheid. Kopieerde hij alleen wanneer het
+  # bestand nog ontbrak, dan zou een wijziging hierboven stilzwijgend niets
+  # doen zodra de brug één keer gedraaid heeft. De gegevens van de brug staan
+  # in Postgres, niet in dit bestand, dus er gaat niets verloren.
+  signal-init:
+    image: alpine:3.20
+    restart: "no"
+    command: sh -c "mkdir -p /data; cp /seed/config.yaml /data/config.yaml; cp /seed/registration.yaml /data/registration.yaml; chown -R 1337:1337 /data; echo 'brug-config bijgewerkt'"
+    volumes:
+      - matrix_signal:/data
+    configs:
+      - source: signalconfig
+        target: /seed/config.yaml
+      - source: signalregistration
+        target: /seed/registration.yaml
+    labels:
+      com.centurylinklabs.watchtower.enable: "false"
+
+  mautrix-signal:
+    image: dock.mau.dev/mautrix/signal:latest
+    restart: unless-stopped
+    depends_on:
+      synapse:
+        condition: service_started
+      signal-init:
+        condition: service_completed_successfully
+    volumes:
+      - matrix_signal:/data
+    labels:
+      com.centurylinklabs.watchtower.enable: "false"
+      # Zelfde reden als bij traefik: verhoog dit bij elke wijziging aan
+      # signalconfig, anders blijft de oude container gewoon staan.
+      chatman.config-revisie: "6"
+
+  # Maakt de database voor WhatsApp aan.
+  #
+  # Kan niet via het init-script van Postgres: dat draait alleen wanneer het
+  # datavolume nog leeg is, en dat is hier allang niet meer zo. Dit containertje
+  # kijkt zelf of gebruiker en database bestaan en maakt ze anders aan.
+  whatsappdb-init:
+    image: postgres:16-alpine
+    restart: "no"
+    depends_on:
+      db:
+        condition: service_healthy
+    command: sh /init/whatsappdb.sh
+    configs:
+      - source: whatsappdb
+        target: /init/whatsappdb.sh
+    labels:
+      com.centurylinklabs.watchtower.enable: "false"
+
+  whatsapp-init:
+    image: alpine:3.20
+    restart: "no"
+    command: sh -c "mkdir -p /data; cp /seed/config.yaml /data/config.yaml; cp /seed/registration.yaml /data/registration.yaml; chown -R 1337:1337 /data; echo 'whatsapp-config bijgewerkt'"
+    volumes:
+      - matrix_whatsapp:/data
+    configs:
+      - source: whatsappconfig
+        target: /seed/config.yaml
+      - source: whatsappregistration
+        target: /seed/registration.yaml
+    labels:
+      com.centurylinklabs.watchtower.enable: "false"
+
+  mautrix-whatsapp:
+    image: dock.mau.dev/mautrix/whatsapp:latest
+    restart: unless-stopped
+    depends_on:
+      synapse:
+        condition: service_started
+      whatsappdb-init:
+        condition: service_completed_successfully
+      whatsapp-init:
+        condition: service_completed_successfully
+    volumes:
+      - matrix_whatsapp:/data
+    labels:
+      com.centurylinklabs.watchtower.enable: "false"
+      chatman.config-revisie: "2"
+
+  # Push-gateway. Synapse roept deze aan; hij praat met Apple.
+  # Uitgeschakeld tot je een APNs-sleutel hebt (vereist een betaald
+  # Apple Developer-account).
+  #
+  # sygnal:
+  #   image: matrixdotorg/sygnal:latest
+
+volumes:
+  matrix_db:
+  matrix_synapse:
+  matrix_signal:
+  matrix_whatsapp:
+  matrix_traefik:
+
+configs:
+  bridgedb:
+    content: |
+      #!/bin/sh
+      set -e
+      psql -v ON_ERROR_STOP=1 --username "$$POSTGRES_USER" <<-SQL
+        CREATE USER mautrixsignal WITH PASSWORD 'VUL-IN-DATABASEWACHTWOORD';
+        CREATE DATABASE mautrixsignal OWNER mautrixsignal
+          TEMPLATE template0 LC_COLLATE 'C' LC_CTYPE 'C';
+      SQL
+
+  traefikroute:
+    content: |
+      http:
+        middlewares:
+          # De bruggen luisteren allebei op hetzelfde pad. Ze krijgen hier een
+          # eigen voorvoegsel dat er weer af gaat voordat het verzoek aankomt,
+          # zodat elke brug ongewijzigd blijft draaien.
+          strip-signal:
+            stripPrefix:
+              prefixes:
+                - "/bridge/signal"
+          strip-whatsapp:
+            stripPrefix:
+              prefixes:
+                - "/bridge/whatsapp"
+
+        routers:
+          bridge-signal:
+            rule: "Host(`matrix.example.com`) && PathPrefix(`/bridge/signal/`)"
+            priority: 100
+            entryPoints:
+              - websecure
+            middlewares:
+              - strip-signal
+            service: mautrix-signal
+            tls:
+              certResolver: gandi
+
+          bridge-whatsapp:
+            rule: "Host(`matrix.example.com`) && PathPrefix(`/bridge/whatsapp/`)"
+            priority: 100
+            entryPoints:
+              - websecure
+            middlewares:
+              - strip-whatsapp
+            service: mautrix-whatsapp
+            tls:
+              certResolver: gandi
+
+          synapse:
+            rule: "Host(`matrix.example.com`)"
+            priority: 10
+            entryPoints:
+              - websecure
+            service: synapse
+            tls:
+              certResolver: gandi
+
+        services:
+          synapse:
+            loadBalancer:
+              servers:
+                - url: "http://synapse:8008"
+          mautrix-signal:
+            loadBalancer:
+              servers:
+                - url: "http://mautrix-signal:29328"
+          mautrix-whatsapp:
+            loadBalancer:
+              servers:
+                - url: "http://mautrix-whatsapp:29318"
+
+  signingkey:
+    content: |
+      # Wordt bij de installatie gemaakt; zie server/README.md.
+      ed25519 a_VULIN VUL-IN-SIGNING-KEY
+
+  logconfig:
+    content: |
+      version: 1
+      formatters:
+        precise:
+          format: '%(asctime)s - %(name)s - %(lineno)d - %(levelname)s - %(request)s - %(message)s'
+      handlers:
+        console:
+          class: logging.StreamHandler
+          formatter: precise
+      loggers:
+        synapse.storage.SQL:
+          level: INFO
+      root:
+        level: INFO
+        handlers: [console]
+      disable_existing_loggers: false
+
+  # Het contract tussen Synapse en de brug. Beide kanten moeten exact
+  # dezelfde tokens kennen; daarom staat dit bestand hier één keer en wordt
+  # het aan allebei gegeven.
+  signalregistration:
+    content: |
+      id: signal
+      url: http://mautrix-signal:29328
+      as_token: "VUL-IN-AS-TOKEN-SIGNAAL"
+      hs_token: "VUL-IN-HS-TOKEN"
+      sender_localpart: "_bot_VUL-IN-WILLEKEURIG"
+      rate_limited: false
+      namespaces:
+        users:
+          - regex: '^@signal_.*:matrix\.example\.com$'
+            exclusive: true
+          - regex: '^@signalbot:matrix\.example\.com$'
+            exclusive: true
+          # Niet-exclusief, en bewust voor iedere gebruiker op deze server: dit
+          # laat de brug namens jou spreken (double puppeting). Zonder deze regel
+          # komen berichten die je zelf op je telefoon stuurt binnen als
+          # afkomstig van een schaduwaccount, en telt Synapse ze als ongelezen.
+          - regex: '^@.*:matrix\.example\.com$'
+            exclusive: false
+      de.sorunome.msc2409.push_ephemeral: true
+      push_ephemeral: true
+      receive_ephemeral: true
+
+  whatsappdb:
+    content: |
+      #!/bin/sh
+      set -e
+      export PGPASSWORD='VUL-IN-SYNAPSE-DATABASEWACHTWOORD'
+      Q="psql -h db -U synapse -d postgres -tAc"
+      $$Q "SELECT 1 FROM pg_roles WHERE rolname='mautrixwhatsapp'" | grep -q 1 || \
+        psql -h db -U synapse -d postgres -c "CREATE USER mautrixwhatsapp WITH PASSWORD 'VUL-IN-DATABASEWACHTWOORD'"
+      $$Q "SELECT 1 FROM pg_database WHERE datname='mautrixwhatsapp'" | grep -q 1 || \
+        psql -h db -U synapse -d postgres -c "CREATE DATABASE mautrixwhatsapp OWNER mautrixwhatsapp TEMPLATE template0 LC_COLLATE 'C' LC_CTYPE 'C'"
+      echo 'whatsapp-database klaar'
+
+  whatsappregistration:
+    content: |
+      id: whatsapp
+      url: http://mautrix-whatsapp:29318
+      as_token: "VUL-IN-AS-TOKEN-SIGNAAL"
+      hs_token: "VUL-IN-HS-TOKEN"
+      sender_localpart: "_bot_VUL-IN-WILLEKEURIG"
+      rate_limited: false
+      namespaces:
+        users:
+          - regex: '^@whatsapp_.*:matrix\.example\.com$'
+            exclusive: true
+          - regex: '^@whatsappbot:matrix\.example\.com$'
+            exclusive: true
+          - regex: '^@.*:matrix\.example\.com$'
+            exclusive: false
+      de.sorunome.msc2409.push_ephemeral: true
+      push_ephemeral: true
+      receive_ephemeral: true
+
+  whatsappconfig:
+    content: |
+      bridge:
+        # De brug laat een leesbevestiging achter zodra hij een bericht heeft
+        # doorgegeven aan het andere netwerk. Matrix kent geen "bezorgd", dus
+        # dit is wat er het dichtst bij komt — en het is precies wat Chatman
+        # onder je laatste bericht laat zien.
+        delivery_receipts: true
+        permissions:
+          "matrix.example.com": admin
+
+      database:
+        type: postgres
+        uri: postgres://mautrixwhatsapp:VUL-IN-DATABASEWACHTWOORD@db/mautrixwhatsapp?sslmode=disable
+
+      homeserver:
+        address: http://synapse:8008
+        domain: matrix.example.com
+        software: standard
+
+      appservice:
+        hostname: 0.0.0.0
+        port: 29318
+        id: whatsapp
+        bot:
+          username: whatsappbot
+          displayname: WhatsApp
+        as_token: "VUL-IN-AS-TOKEN-SIGNAAL"
+        hs_token: "VUL-IN-HS-TOKEN"
+        username_template: whatsapp_{{.}}
+
+      backfill:
+        enabled: true
+        max_initial_messages: 50
+        max_catchup_messages: 500
+
+      double_puppet:
+        secrets:
+          matrix.example.com: "as_token:VUL-IN-AS-TOKEN"
+
+      encryption:
+        allow: false
+        default: false
+
+      network:
+        displayname_template: '{{or .FullName .PushName .Phone "Onbekend"}}'
+        # Deze naam zie je terug in WhatsApp onder Gekoppelde apparaten.
+        device_name: Chatman
+
+      logging:
+        min_level: info
+        writers:
+          - type: stdout
+            format: pretty-colored
+
+  signalconfig:
+    content: |
+      bridge:
+        # De brug laat een leesbevestiging achter zodra hij een bericht heeft
+        # doorgegeven aan het andere netwerk. Matrix kent geen "bezorgd", dus
+        # dit is wat er het dichtst bij komt — en het is precies wat Chatman
+        # onder je laatste bericht laat zien.
+        delivery_receipts: true
+
+        # Het hele domein mag deze brug gebruiken. Registratie staat dicht, dus
+        # er komt niemand binnen die jij niet zelf hebt aangemaakt. Een tweede
+        # account op deze server kan hierdoor zijn eigen Signal koppelen,
+        # zonder dat er iets aan deze stack hoeft te veranderen.
+        permissions:
+          "matrix.example.com": admin
+
+      database:
+        type: postgres
+        uri: postgres://mautrixsignal:VUL-IN-DATABASEWACHTWOORD@db/mautrixsignal?sslmode=disable
+
+      homeserver:
+        address: http://synapse:8008
+        domain: matrix.example.com
+        software: standard
+
+      appservice:
+        # 0.0.0.0 en niet 127.0.0.1, anders is de brug onbereikbaar
+        # vanuit de andere containers.
+        hostname: 0.0.0.0
+        port: 29328
+        id: signal
+        bot:
+          username: signalbot
+          displayname: Signal
+        as_token: "VUL-IN-AS-TOKEN-SIGNAAL"
+        hs_token: "VUL-IN-HS-TOKEN"
+        username_template: signal_{{.}}
+
+      provisioning:
+        # Hiermee mag Chatman het inloggen bij Signal afhandelen via een
+        # gewone HTTP-koppeling. allow_matrix_auth laat de app zich
+        # legitimeren met je eigen Matrix-token, zodat er geen tweede
+        # geheim bestaat dat kan uitlekken.
+        shared_secret: generate
+        allow_matrix_auth: true
+
+      backfill:
+        # Standaard staat dit uit, en dan maakt de brug pas een kamer zodra er
+        # een nieuw bericht binnenkomt. Je bestaande gesprekken blijven dan
+        # onzichtbaar terwijl alles verder goed werkt.
+        enabled: true
+        max_initial_messages: 50
+        max_catchup_messages: 500
+
+      double_puppet:
+        # Hiermee verschijnen jouw eigen berichten als jouzelf in plaats van als
+        # een schaduwaccount. Het token hieronder is dat van de brug zelf; de
+        # naamruimte hierboven geeft hem toestemming.
+        secrets:
+          matrix.example.com: "as_token:VUL-IN-AS-TOKEN"
+
+      encryption:
+        # Bewust uit. Chatman leest geen versleutelde kamers, dus met
+        # encryptie aan zie je op je horloge alleen "Encrypted" staan.
+        # Het verkeer naar buiten is nog steeds TLS, en de server is van jou.
+        allow: false
+        default: false
+
+      network:
+        displayname_template: '{{or .ProfileName .PhoneNumber "Onbekend"}}'
+        # Deze naam zie je terug in Signal onder Gekoppelde apparaten.
+        device_name: Chatman
+
+      logging:
+        # Bewust op info. Op debug schrijft de brug ook de inhoud van je
+        # berichten in het logboek, en die hoort daar niet te staan.
+        min_level: info
+        writers:
+          - type: stdout
+            format: pretty-colored
+
+  homeserver:
+    content: |
+      server_name: "matrix.example.com"
+      # Let op de poort: je bereikt de server op 8443, dus die hoort erbij.
+      # Zonder poort verwijst Synapse clients naar een adres dat dichtstaat.
+      public_baseurl: "https://matrix.example.com:8443/"
+      pid_file: /data/homeserver.pid
+      signing_key_path: "/config/signing.key"
+      log_config: "/config/log.config"
+      media_store_path: /data/media_store
+      report_stats: false
+
+      listeners:
+        - port: 8008
+          tls: false
+          type: http
+          # Zonder dit ziet Synapse elk verzoek als afkomstig van Traefik.
+          x_forwarded: true
+          bind_addresses: ['0.0.0.0']
+          resources:
+            - names: [client]
+              compress: false
+
+      database:
+        name: psycopg2
+        args:
+          user: synapse
+          password: "VUL-IN-SYNAPSE-DATABASEWACHTWOORD"
+          dbname: synapse
+          host: db
+          cp_min: 5
+          cp_max: 10
+
+      # De bruggen aanmelden.
+      app_service_config_files:
+        - /config/signal-registration.yaml
+        - /config/whatsapp-registration.yaml
+
+      # Jij bent de enige gebruiker. Registratie dicht, federatie uit.
+      # Dat laatste laat de hele klasse certificaat- en delegatieproblemen
+      # verdwijnen waar Matrix zijn reputatie aan dankt.
+      enable_registration: false
+      federation_domain_whitelist: []
+      trusted_key_servers: []
+      suppress_key_server_warning: true
+
+      # Nieuwe kamers niet automatisch versleutelen. Moet overeenkomen met
+      # de encryptie-instelling van de brug hierboven.
+      encryption_enabled_by_default_for_room_type: "off"
+
+      # Hiermee verschijnen je Signal-contacten in "+ Nieuw gesprek".
+      # Zonder search_all_users toont Synapse alleen mensen met wie je al een
+      # kamer deelt, en moet je nieuwe chats via een botcommando starten.
+      user_directory:
+        enabled: true
+        search_all_users: true
+        prefer_local_users: true
+
+      registration_shared_secret: "VUL-IN-GEHEIM"
+      macaroon_secret_key: "VUL-IN-GEHEIM"
+      form_secret: "VUL-IN-GEHEIM"

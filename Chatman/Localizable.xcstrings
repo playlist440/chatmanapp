@@ -1,0 +1,2132 @@
+{
+  "sourceLanguage": "en",
+  "strings": {
+    "*nudge*": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "*por*"
+          }
+        }
+      }
+    },
+    "%@ · %@": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "new",
+            "value": "%1$@ · %2$@"
+          }
+        }
+      }
+    },
+    "%@ connected": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ verbonden"
+          }
+        }
+      }
+    },
+    "%@ invited you": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ heeft je uitgenodigd"
+          }
+        }
+      }
+    },
+    "%@ is disconnected": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ is ontkoppeld"
+          }
+        }
+      }
+    },
+    "%@ isn't answering": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ antwoordt niet"
+          }
+        }
+      }
+    },
+    "%@ on this phone?": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ op deze telefoon?"
+          }
+        }
+      }
+    },
+    "%lld": {},
+    "%lld / %lld": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "new",
+            "value": "%1$lld / %2$lld"
+          }
+        }
+      }
+    },
+    "%lld contacts across your connected accounts.": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld contacten in je gekoppelde accounts."
+          }
+        }
+      }
+    },
+    "%lld new": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld nieuw"
+          }
+        }
+      }
+    },
+    "%lld photos": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld foto's"
+          }
+        }
+      }
+    },
+    "%lld photos and videos": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld foto's en video's"
+          }
+        }
+      }
+    },
+    "%lld unread": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld ongelezen"
+          }
+        }
+      }
+    },
+    "%lld%%": {},
+    "+%lld": {},
+    "443": {},
+    "Account": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Account"
+          }
+        }
+      }
+    },
+    "Accounts": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Diensten"
+          }
+        }
+      }
+    },
+    "Accurate to about %lld m": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nauwkeurig tot ongeveer %lld m"
+          }
+        }
+      }
+    },
+    "Add a caption": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Voeg een bijschrift toe"
+          }
+        }
+      }
+    },
+    "Add an account": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Voeg een account toe"
+          }
+        }
+      }
+    },
+    "Add another account": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Voeg nog een account toe"
+          }
+        }
+      }
+    },
+    "Add more photos": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Voeg meer foto's toe"
+          }
+        }
+      }
+    },
+    "Advanced": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Geavanceerd"
+          }
+        }
+      }
+    },
+    "All": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Alle"
+          }
+        }
+      }
+    },
+    "All Chats": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Alle chats"
+          }
+        }
+      }
+    },
+    "Always dark": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Altijd donker"
+          }
+        }
+      }
+    },
+    "Anna de Vries": {},
+    "Appearance": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Weergave"
+          }
+        }
+      }
+    },
+    "Archive": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Archiveer"
+          }
+        }
+      }
+    },
+    "Archived": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gearchiveerd"
+          }
+        }
+      }
+    },
+    "Ask Again": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vraag opnieuw"
+          }
+        }
+      }
+    },
+    "Available once the matching bridge runs on your server.": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Beschikbaar zodra de bijbehorende brug op je server draait."
+          }
+        }
+      }
+    },
+    "Background": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Achtergrond"
+          }
+        }
+      }
+    },
+    "Behind the chat list and every conversation, in light and in dark.": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Achter de chatlijst en elk gesprek, in licht en donker."
+          }
+        }
+      }
+    },
+    "Bridges": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bruggen"
+          }
+        }
+      }
+    },
+    "Camera": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Camera"
+          }
+        }
+      }
+    },
+    "Can't reach your server": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Je server is niet bereikbaar"
+          }
+        }
+      }
+    },
+    "Cancel": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Annuleer"
+          }
+        }
+      }
+    },
+    "Change contact": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wijzig contact"
+          }
+        }
+      }
+    },
+    "Chatman": {},
+    "Chatman stays dark even when your phone doesn't. Off, it does what the phone does.": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Chatman blijft donker, ook als je telefoon dat niet is. Uit volgt Chatman je telefoon."
+          }
+        }
+      }
+    },
+    "Chatman talks to bridges running on your own server, and there isn't one for %@ there. Add the container, and this screen will connect you.": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Chatman praat met bruggen op je eigen server, en daar draait er geen voor %@. Voeg de container toe, dan koppelt dit scherm je."
+          }
+        }
+      }
+    },
+    "Chatman would love this one back. He was supersnel op MSN — it said so on every poster — and he has been refreshing his contact list since 2013.\n\nThere is no bridge for it, because there is nothing left on the other side to bridge to. Sorry.": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Chatman wil deze graag terug. Hij was supersnel op MSN — het stond op elke poster — en hij ververst zijn contactenlijst al sinds 2013.\n\nEr is geen brug voor, want aan de andere kant is niets meer om naartoe te bruggen. Sorry."
+          }
+        }
+      }
+    },
+    "Chatman, supersnel op MSN": {},
+    "Chats": {},
+    "Chats from your bridges appear here as soon as they arrive.": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Chats van je bruggen verschijnen hier zodra ze binnenkomen."
+          }
+        }
+      }
+    },
+    "Choose a Photo": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kies een foto"
+          }
+        }
+      }
+    },
+    "Choose Another": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kies een andere"
+          }
+        }
+      }
+    },
+    "Choose from contacts": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kies uit contacten"
+          }
+        }
+      }
+    },
+    "Connect %@": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Koppel %@"
+          }
+        }
+      }
+    },
+    "Connect a service your server has a bridge for.": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Koppel een dienst waarvoor je server een brug heeft."
+          }
+        }
+      }
+    },
+    "Connect again": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Koppel opnieuw"
+          }
+        }
+      }
+    },
+    "Connecting…": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Koppelen…"
+          }
+        }
+      }
+    },
+    "Connection": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Verbinding"
+          }
+        }
+      }
+    },
+    "Continue": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ga door"
+          }
+        }
+      }
+    },
+    "Copied": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gekopieerd"
+          }
+        }
+      }
+    },
+    "Copy": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kopieer"
+          }
+        }
+      }
+    },
+    "Copy link": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kopieer link"
+          }
+        }
+      }
+    },
+    "Couldn't delete": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Verwijderen mislukt"
+          }
+        }
+      }
+    },
+    "Couldn't draw the code": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "De code kon niet worden getekend"
+          }
+        }
+      }
+    },
+    "Couldn't send": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Versturen mislukt"
+          }
+        }
+      }
+    },
+    "Couldn't share your location": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Je locatie kon niet worden gedeeld"
+          }
+        }
+      }
+    },
+    "Create": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Maak"
+          }
+        }
+      }
+    },
+    "Decline": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Weiger"
+          }
+        }
+      }
+    },
+    "Delete": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Verwijder"
+          }
+        }
+      }
+    },
+    "Details": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Details"
+          }
+        }
+      }
+    },
+    "Done": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gereed"
+          }
+        }
+      }
+    },
+    "Edit": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wijzig"
+          }
+        }
+      }
+    },
+    "Encrypted message": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Versleuteld bericht"
+          }
+        }
+      }
+    },
+    "Files": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bestanden"
+          }
+        }
+      }
+    },
+    "Filter": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Filter"
+          }
+        }
+      }
+    },
+    "Forward": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Stuur door"
+          }
+        }
+      }
+    },
+    "Geldt voor de namen en de berichten op deze telefoon. Het horloge houdt het lettertype van het systeem: daar lees je van een afstand, vaak buiten.": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Geldt voor de namen en de berichten op deze telefoon. Het horloge houdt het lettertype van het systeem: daar lees je van een afstand, vaak buiten."
+          }
+        }
+      }
+    },
+    "Getting ready": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Voorbereiden"
+          }
+        }
+      }
+    },
+    "Getting your conversations": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Je gesprekken ophalen"
+          }
+        }
+      }
+    },
+    "GIF": {},
+    "Group": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Groep"
+          }
+        }
+      }
+    },
+    "Group name": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Groepsnaam"
+          }
+        }
+      }
+    },
+    "Groups": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Groepen"
+          }
+        }
+      }
+    },
+    "Hide status updates": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Verberg statusupdates"
+          }
+        }
+      }
+    },
+    "https://matrix.example.com/_matrix/push/v1/notify": {},
+    "Ik wil dit wel gaan regelen, zal ik 2 open tikkies sturen?": {},
+    "It is on your server, but it didn't answer Chatman. Its log on the server says why; once it's running again, this screen will connect you.": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hij staat op je server, maar antwoordde Chatman niet. Het log op de server zegt waarom; zodra hij weer draait, koppelt dit scherm je."
+          }
+        }
+      }
+    },
+    "It is still there for everyone else. %@": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Voor alle anderen staat het er nog. %@"
+          }
+        }
+      }
+    },
+    "Join": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Doe mee"
+          }
+        }
+      }
+    },
+    "Leave the port at 443 unless your server listens somewhere else — 8443 is the usual alternative when a provider blocks the standard one.": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Laat de poort op 443 staan, tenzij je server ergens anders luistert — 8443 is het gebruikelijke alternatief als een provider de standaardpoort blokkeert."
+          }
+        }
+      }
+    },
+    "Lettertype": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lettertype"
+          }
+        }
+      }
+    },
+    "Lettertypes": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lettertypes"
+          }
+        }
+      }
+    },
+    "Load earlier messages": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Laad eerdere berichten"
+          }
+        }
+      }
+    },
+    "Loading contacts": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Contacten laden"
+          }
+        }
+      }
+    },
+    "Location": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Locatie"
+          }
+        }
+      }
+    },
+    "M": {},
+    "matrix.example.com": {},
+    "Mentions you": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Noemt jou"
+          }
+        }
+      }
+    },
+    "Message": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bericht"
+          }
+        }
+      }
+    },
+    "Messages": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Berichten"
+          }
+        }
+      }
+    },
+    "More emoji…": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Meer emoji…"
+          }
+        }
+      }
+    },
+    "MSN Messenger": {},
+    "Mute": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zet stil"
+          }
+        }
+      }
+    },
+    "Name or number": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Naam of nummer"
+          }
+        }
+      }
+    },
+    "Names are matched to your address book by phone number.": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Namen worden op telefoonnummer aan je adresboek gekoppeld."
+          }
+        }
+      }
+    },
+    "Names from your contacts": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Namen uit je contacten"
+          }
+        }
+      }
+    },
+    "New chat": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nieuwe chat"
+          }
+        }
+      }
+    },
+    "New Chat": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nieuwe chat"
+          }
+        }
+      }
+    },
+    "New group": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nieuwe groep"
+          }
+        }
+      }
+    },
+    "New messages": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nieuwe berichten"
+          }
+        }
+      }
+    },
+    "No %@ bridge yet": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nog geen %@-brug"
+          }
+        }
+      }
+    },
+    "No conversations yet": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nog geen gesprekken"
+          }
+        }
+      }
+    },
+    "No photos yet": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nog geen foto's"
+          }
+        }
+      }
+    },
+    "Not connected": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Niet verbonden"
+          }
+        }
+      }
+    },
+    "Not matched (%lld)": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Niet gekoppeld (%lld)"
+          }
+        }
+      }
+    },
+    "Not on your server yet": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nog niet op je server"
+          }
+        }
+      }
+    },
+    "Not sent": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Niet verstuurd"
+          }
+        }
+      }
+    },
+    "Not sent · tap to retry": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Niet verstuurd · tik om opnieuw te proberen"
+          }
+        }
+      }
+    },
+    "Not signed in": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Niet ingelogd"
+          }
+        }
+      }
+    },
+    "Not tried yet": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nog niet geprobeerd"
+          }
+        }
+      }
+    },
+    "Nothing archived": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Niets gearchiveerd"
+          }
+        }
+      }
+    },
+    "Nothing unread": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Niets ongelezen"
+          }
+        }
+      }
+    },
+    "Notifications": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Meldingen"
+          }
+        }
+      }
+    },
+    "OK": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "OK"
+          }
+        }
+      }
+    },
+    "On your server": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Op je server"
+          }
+        }
+      }
+    },
+    "Only if you signed out on purpose. Chatman stops warning about it; your chats stay where they are.": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Alleen als je bewust bent uitgelogd. Chatman waarschuwt er dan niet meer voor; je chats blijven waar ze zijn."
+          }
+        }
+      }
+    },
+    "Open %@": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Open %@"
+          }
+        }
+      }
+    },
+    "Open in Maps": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Open in Kaarten"
+          }
+        }
+      }
+    },
+    "Password": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wachtwoord"
+          }
+        }
+      }
+    },
+    "People": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Personen"
+          }
+        }
+      }
+    },
+    "Photo": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Foto"
+          }
+        }
+      }
+    },
+    "Photos": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Foto's"
+          }
+        }
+      }
+    },
+    "Photos you take": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Foto's die je maakt"
+          }
+        }
+      }
+    },
+    "Pick at least two people. A group lives on one service, so the first person you choose decides which.": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kies minstens twee mensen. Een groep bestaat op één dienst, dus de eerste die je kiest bepaalt welke."
+          }
+        }
+      }
+    },
+    "Picture unavailable": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Foto niet beschikbaar"
+          }
+        }
+      }
+    },
+    "Pictures from this conversation collect here.": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Foto's uit dit gesprek verzamelen zich hier."
+          }
+        }
+      }
+    },
+    "Pin": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zet vast"
+          }
+        }
+      }
+    },
+    "Port": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Poort"
+          }
+        }
+      }
+    },
+    "Push gateway": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pushgateway"
+          }
+        }
+      }
+    },
+    "RD": {},
+    "React": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Reageer"
+          }
+        }
+      }
+    },
+    "Read": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gelezen"
+          }
+        }
+      }
+    },
+    "Reconnect": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Koppel opnieuw"
+          }
+        }
+      }
+    },
+    "Remove": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Verwijder"
+          }
+        }
+      }
+    },
+    "Remove photo": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Verwijder foto"
+          }
+        }
+      }
+    },
+    "Reply": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Antwoord"
+          }
+        }
+      }
+    },
+    "Reset": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Herstel"
+          }
+        }
+      }
+    },
+    "Search": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zoek"
+          }
+        }
+      }
+    },
+    "Search chats": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zoek in chats"
+          }
+        }
+      }
+    },
+    "Search emoji": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zoek emoji"
+          }
+        }
+      }
+    },
+    "Search for someone": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zoek iemand"
+          }
+        }
+      }
+    },
+    "Send": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Stuur"
+          }
+        }
+      }
+    },
+    "Send your location": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Stuur je locatie"
+          }
+        }
+      }
+    },
+    "Sending": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Versturen"
+          }
+        }
+      }
+    },
+    "Sent as a link anyone can open, whichever map app they use.": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Verstuurd als link die iedereen kan openen, met welke kaartenapp dan ook."
+          }
+        }
+      }
+    },
+    "Server": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Server"
+          }
+        }
+      }
+    },
+    "Service": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dienst"
+          }
+        }
+      }
+    },
+    "Services": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Diensten"
+          }
+        }
+      }
+    },
+    "Settings": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Instellingen"
+          }
+        }
+      }
+    },
+    "Share something": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Deel iets"
+          }
+        }
+      }
+    },
+    "Show": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Toon"
+          }
+        }
+      }
+    },
+    "Shows chat info": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Toont chatinfo"
+          }
+        }
+      }
+    },
+    "Sign in": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Log in"
+          }
+        }
+      }
+    },
+    "Sign in another way": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Log op een andere manier in"
+          }
+        }
+      }
+    },
+    "Sign in as you normally would. Chatman only keeps what %@ hands back.": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Log in zoals je gewend bent. Chatman bewaart alleen wat %@ teruggeeft."
+          }
+        }
+      }
+    },
+    "Sign in to Chatman first.": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Log eerst in bij Chatman."
+          }
+        }
+      }
+    },
+    "Sign out": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Log uit"
+          }
+        }
+      }
+    },
+    "Sign out of Chatman?": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Uitloggen bij Chatman?"
+          }
+        }
+      }
+    },
+    "Signed in as": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ingelogd als"
+          }
+        }
+      }
+    },
+    "Signed in. Finishing up…": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ingelogd. Afronden…"
+          }
+        }
+      }
+    },
+    "Signing in": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Inloggen"
+          }
+        }
+      }
+    },
+    "Signs in to %@ again, the same way you did the first time.": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Logt opnieuw in bij %@, op dezelfde manier als de eerste keer."
+          }
+        }
+      }
+    },
+    "Start a chat": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Begin een chat"
+          }
+        }
+      }
+    },
+    "Start a new chat with “%@”": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Begin een nieuwe chat met “%@”"
+          }
+        }
+      }
+    },
+    "Status": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Status"
+          }
+        }
+      }
+    },
+    "Stop Using %@": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Stop met %@"
+          }
+        }
+      }
+    },
+    "Stop using %@ in Chatman?": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Stoppen met %@ in Chatman?"
+          }
+        }
+      }
+    },
+    "Swipe a chat to the left to put it here.": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Veeg een chat naar links om hem hier te zetten."
+          }
+        }
+      }
+    },
+    "Tap an account to see how it is doing.": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tik op een account om te zien hoe het ermee gaat."
+          }
+        }
+      }
+    },
+    "Tap to open": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tik om te openen"
+          }
+        }
+      }
+    },
+    "That didn't work": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dat lukte niet"
+          }
+        }
+      }
+    },
+    "The %@ bridge isn't answering": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "De %@-brug antwoordt niet"
+          }
+        }
+      }
+    },
+    "The account on your own Matrix server. Just the name — `alex`, not the whole address.": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Het account op je eigen Matrix-server. Alleen de naam — `alex`, niet het hele adres."
+          }
+        }
+      }
+    },
+    "The address of the push gateway on your server. Without one, Chatman fetches messages only while it is open.": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Het adres van de pushgateway op je server. Zonder gateway haalt Chatman alleen berichten op als de app open is."
+          }
+        }
+      }
+    },
+    "The path where each bridge answers, with {network} standing in for signal, whatsapp and the rest. Change it only if your server routes them differently.": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Het pad waarop elke brug antwoordt, met {network} in plaats van signal, whatsapp en de rest. Wijzig dit alleen als je server ze anders doorstuurt."
+          }
+        }
+      }
+    },
+    "This isn't working": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dit werkt niet"
+          }
+        }
+      }
+    },
+    "This only takes a moment the first time.": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dit duurt alleen de eerste keer even."
+          }
+        }
+      }
+    },
+    "This picture couldn't be loaded.": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Deze foto kon niet worden geladen."
+          }
+        }
+      }
+    },
+    "This video couldn't be loaded.": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Deze video kon niet worden geladen."
+          }
+        }
+      }
+    },
+    "Try again": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Probeer opnieuw"
+          }
+        }
+      }
+    },
+    "Try anyway": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Probeer toch"
+          }
+        }
+      }
+    },
+    "Try now": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Probeer nu"
+          }
+        }
+      }
+    },
+    "Unarchive": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Haal uit archief"
+          }
+        }
+      }
+    },
+    "Unmute": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zet geluid aan"
+          }
+        }
+      }
+    },
+    "Unpin": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Maak los"
+          }
+        }
+      }
+    },
+    "Unread": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ongelezen"
+          }
+        }
+      }
+    },
+    "Up to date": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bijgewerkt"
+          }
+        }
+      }
+    },
+    "Updating…": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bijwerken…"
+          }
+        }
+      }
+    },
+    "Use the name from %@": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gebruik de naam van %@"
+          }
+        }
+      }
+    },
+    "Username": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gebruikersnaam"
+          }
+        }
+      }
+    },
+    "Video unavailable": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Video niet beschikbaar"
+          }
+        }
+      }
+    },
+    "View photo": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bekijk foto"
+          }
+        }
+      }
+    },
+    "Voice message": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Spraakbericht"
+          }
+        }
+      }
+    },
+    "WhatsApp collects everybody's status posts in one chat. Hidden means hidden: out of both lists, out of the count on your watch, and muted on your server.": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "WhatsApp verzamelt ieders statusberichten in één chat. Verborgen is verborgen: uit beide lijsten, uit de teller op je horloge en stil op je server."
+          }
+        }
+      }
+    },
+    "Where the bridges live": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Waar de bruggen wonen"
+          }
+        }
+      }
+    },
+    "Yesterday": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gisteren"
+          }
+        }
+      }
+    },
+    "You're up to date.": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Je bent bij."
+          }
+        }
+      }
+    },
+    "You've been invited": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Je bent uitgenodigd"
+          }
+        }
+      }
+    },
+    "Your account": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Je account"
+          }
+        }
+      }
+    },
+    "Your chats will appear in a moment.": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Je chats verschijnen zo."
+          }
+        }
+      }
+    },
+    "Your conversations stay on your server. This device downloads them again next time you sign in.": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Je gesprekken blijven op je server. Dit apparaat haalt ze opnieuw op als je weer inlogt."
+          }
+        }
+      }
+    },
+    "Your server": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Je server"
+          }
+        }
+      }
+    },
+    "Zullen we om acht uur bij de ingang afspreken? Dan lopen we samen naar binnen.": {},
+    "Photos from your library are always sent unchanged.": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Foto's uit je bibliotheek gaan altijd ongewijzigd."
+          }
+        }
+      }
+    },
+    "Pinned": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vastgezet"
+          }
+        }
+      }
+    },
+    "Tap to try again": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tik om opnieuw te proberen"
+          }
+        }
+      }
+    },
+    "Open Chat": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Open chat"
+          }
+        }
+      }
+    },
+    "Send Message": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Stuur bericht"
+          }
+        }
+      }
+    },
+    "Chat": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Chat"
+          }
+        }
+      }
+    },
+    "Open Chatman and sign in first.": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Open Chatman en log eerst in."
+          }
+        }
+      }
+    },
+    "Sent to %@.": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Verstuurd naar %@."
+          }
+        }
+      }
+    },
+    "Send ${text} to ${chat}": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Stuur ${text} naar ${chat}"
+          }
+        }
+      }
+    },
+    "Text": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tekst"
+          }
+        }
+      }
+    },
+    "Light sets names and messages in a thinner weight.": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Licht zet namen en berichten in een dunnere letter."
+          }
+        }
+      }
+    },
+    "Notifications need a push gateway on your server, set under Advanced. Until then Chatman fetches messages while it's open.": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Meldingen vragen een pushgateway op je server, in te stellen onder Geavanceerd. Tot die tijd haalt Chatman berichten op zolang de app open is."
+          }
+        }
+      }
+    },
+    "Bridge Diagnostics": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Diagnose van bruggen"
+          }
+        }
+      }
+    },
+    "Typeface": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lettertype"
+          }
+        }
+      }
+    },
+    "Play GIF": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Speel GIF af"
+          }
+        }
+      }
+    },
+    "A service is disconnected": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Een dienst is niet verbonden"
+          }
+        }
+      }
+    }
+  },
+  "version": "1.3"
+}

@@ -1,0 +1,27 @@
+# Xcode
+build/
+DerivedData/
+*.xcuserstate
+xcuserdata/
+*.xcworkspace/xcuserdata/
+.swiftpm/
+.build/
+
+# macOS
+.DS_Store
+
+# Geheimen. Het ingevulde stackbestand hoort hier nooit in te staan: er zitten
+# tokens in waarmee iemand namens jouw bruggen kan praten.
+GEHEIMEN.txt
+*-secrets.yml
+matrix-stack.yml
+fase1-matrix-stack.yml
+server/matrix-stack.yml
+
+# Losse bronbestanden van de merklogo's; wat de app gebruikt staat in de
+# asset-catalogi.
+/signal*.png
+/whatsapp*.png
+
+# Terugtest-exports: tijden en gehashte afzenders van een echte groep.
+terugtest-*.csv

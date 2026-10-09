@@ -1,0 +1,70 @@
+{
+  "sourceLanguage": "en",
+  "strings": {
+    "%lld waiting": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld wachtend"
+          }
+        }
+      }
+    },
+    "Chatman": {},
+    "Chatman · %lld": {},
+    "Open Chatman, and see what's waiting.": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Open Chatman en zie wat er wacht."
+          }
+        }
+      }
+    },
+    "Updated %@": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bijgewerkt %@"
+          }
+        }
+      }
+    },
+    "Nothing waiting": {
+      "localizations": {
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Niets wachtend"
+          }
+        }
+      }
+    },
+    "%lld chats waiting": {
+      "localizations": {
+        "nl": {
+          "variations": {
+            "plural": {
+              "one": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "%lld chat wacht"
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "%lld chats wachten"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "version": "1.3"
+}
