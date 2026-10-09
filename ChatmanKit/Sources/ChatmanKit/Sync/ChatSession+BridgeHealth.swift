@@ -95,6 +95,10 @@ extension ChatSession {
         var problems: [BridgeProblem] = []
         let used = everConnected
 
+        // While the server itself can't be reached, that is the one thing to say — and the
+        // list says it already. Every bridge would look silent, and none of them is the cause.
+        if case .offline = state { return [] }
+
         for network in ChatNetwork.allCases {
             if used.contains(network), unansweredNetworks.contains(network) {
                 // Checked before the account below, which is whatever the bridge said last

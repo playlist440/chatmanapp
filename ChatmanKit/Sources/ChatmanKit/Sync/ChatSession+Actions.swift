@@ -763,6 +763,22 @@ extension ChatSession {
         unansweredNetworks.contains(network)
     }
 
+    /// Whether a failed question got as far as the server.
+    ///
+    /// An HTTP answer, or one that couldn't be read, came from the server. A network error
+    /// didn't: the phone never got there. A question that ran out of time is counted as the
+    /// bridge's only while the connection to the server itself is fine.
+    func reachedServer(_ error: any Error) -> Bool {
+        switch error as? MatrixError {
+        case .network: return false
+        case .unexpectedStatus, .api, .decoding: return true
+        default:
+            guard error is DeadlinePassed else { return false }
+            if case .offline = state { return false }
+            return true
+        }
+    }
+
     private static func describe(_ error: any Error) -> String {
         switch error as? MatrixError {
         case .unexpectedStatus(let status): "No answer: HTTP \(status)"
@@ -934,12 +950,23 @@ extension ChatSession {
         if bridgeRound?.started == started { bridgeRound?.finished = .now }
 
         var unanswered: Set<ChatNetwork> = []
+        let before = unansweredNetworks
         for (network, answer) in answers {
             guard case .success(let whoami) = answer else {
                 if case .failure(let error) = answer {
                     noteBridgeAbsence(error, on: network)
+                    // Only the bridge's fault when the server was reached. A question that
+                    // never got there — no network, a name that didn't resolve, a VPN with a
+                    // DNS server that had stopped answering — says nothing about the bridge,
+                    // and blaming it put an orange dot on screen all day while the bridges were
+                    // fine and the phone simply couldn't find the server. What was known about
+                    // the bridge before stays as it was.
+                    if reachedServer(error) {
+                        unanswered.insert(network)
+                    } else if before.contains(network) {
+                        unanswered.insert(network)
+                    }
                 }
-                unanswered.insert(network)
                 continue
             }
 

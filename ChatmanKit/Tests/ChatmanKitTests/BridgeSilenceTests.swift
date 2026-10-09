@@ -199,6 +199,33 @@ struct BridgeRoundTests {
         #expect(session.bridgeDiagnoses.contains { $0.network == .whatsapp && $0.hasAccount })
     }
 
+    @Test("A server the phone can't find is not blamed on the bridges")
+    func unreachableServer() async throws {
+        let session = try makeSession(answers: [
+            "whatsapp": (0, ""),
+            "signal": (0, ""),
+        ])
+        session.insert(Conversation(id: "!wa:example.com", name: "Weekend", network: .whatsapp))
+
+        await session.refreshBridges()
+
+        #expect(!session.isUnanswered(.whatsapp))
+        #expect(session.bridgeProblems.isEmpty)
+    }
+
+    @Test("A bridge the server can't get an answer from is still a problem")
+    func reachedServerButNotBridge() async throws {
+        let session = try makeSession(answers: [
+            "whatsapp": (502, "Bad Gateway"),
+        ])
+        session.insert(Conversation(id: "!wa:example.com", name: "Weekend", network: .whatsapp))
+
+        await session.refreshBridges()
+
+        #expect(session.isUnanswered(.whatsapp))
+        #expect(session.bridgeProblems.contains { $0.network == .whatsapp && $0.isUnanswered })
+    }
+
     @Test("A WhatsApp with no login left says it's disconnected")
     func noLoginLeft() async throws {
         let session = try makeSession(answers: [
@@ -230,6 +257,13 @@ final class BridgeServer: URLProtocol, @unchecked Sendable {
         let path = request.url?.path ?? ""
         let network = Self.answers.keys.first { path.contains("/bridge/\($0)/") }
         let (status, body) = network.flatMap { Self.answers[$0] } ?? (404, "404 page not found")
+
+        // Status 0 stands for a server that can't be found at all, as on a VPN whose DNS server
+        // has stopped answering.
+        if status == 0 {
+            client?.urlProtocol(self, didFailWithError: URLError(.cannotFindHost))
+            return
+        }
 
         let response = HTTPURLResponse(
             url: request.url!, statusCode: status, httpVersion: nil,
